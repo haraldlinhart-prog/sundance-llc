@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sundance LLC – Business Consulting & Corporate Advisory for the U.S. Market</title>
+  <meta name="description" content="Sundance LLC is a premier U.S. business consulting and corporate advisory firm. We guide international clients through company formation, investment strategy, legal support and banking solutions in the United States." />
+  <meta name="keywords" content="business consulting USA, corporate consulting, US market entry, international business consulting, company formation USA, investment advisory USA, corporate advisory, US business setup, American market consulting, LLC formation, financial advisory USA, legal support USA, banking solutions USA, Sundance LLC" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.sundance-llc.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sundance LLC – Business Consulting & Corporate Advisory" />
+  <meta property="og:description" content="Your trusted partner for U.S. business consulting, investment guidance and corporate advisory. Serving international clients since 2007." />
+  <meta property="og:url" content="https://www.sundance-llc.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//counter.ixan.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '81']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0A1628;
+      --navy-mid: #142240;
+      --navy-light: #1E3A5F;
+      --red: #C41E3A;
+      --red-light: #E02040;
+      --gold: #B8963E;
+      --gold-light: #D4AE58;
+      --cream: #F8F6F1;
+      --gray-bg: #F2F4F7;
+      --gray-text: #64748B;
+      --border: #E2E8F0;
+      --white: #FFFFFF;
+      --font-display: 'Libre Baskerville', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); color: var(--navy); background: var(--white); line-height: 1.6; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,22,40,0.97); backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(184,150,62,.2);
+      padding: 0 2rem; height: 68px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: var(--font-display); font-size: 1.25rem; font-weight: 700;
+      color: var(--white); text-decoration: none; letter-spacing: .02em;
+    }
+
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+
+    .nav-links a {
+      color: rgba(255,255,255,.75); text-decoration: none; font-size: .82rem;
+      font-weight: 500; letter-spacing: .07em; text-transform: uppercase;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      background: var(--red) !important; color: var(--white) !important;
+      padding: .5rem 1.25rem; border-radius: 4px; font-weight: 600 !important;
+      transition: background .2s !important;
+    }
+
+    .nav-cta:hover { background: var(--red-light) !important; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 55%, var(--navy-light) 100%);
+      display: flex; align-items: center; padding: 7rem 2rem 4rem;
+      position: relative; overflow: hidden;
+    }
+
+    /* Stars/dots pattern */
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: radial-gradient(rgba(184,150,62,.15) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
+    }
+
+    /* Gold glow */
+    #hero::after {
+      content: '';
+      position: absolute; right: -150px; bottom: -100px;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(184,150,62,.1) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1100px; margin: 0 auto; width: 100%;
+      display: grid; grid-template-columns: 1fr 380px; gap: 4rem; align-items: center;
+      position: relative; z-index: 1;
+    }
+
+    .hero-flag {
+      display: inline-flex; align-items: center; gap: .6rem;
+      font-size: .72rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.5rem;
+    }
+
+    .hero-flag::before {
+      content: '🇺🇸';
+      font-size: 1rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 700; color: var(--white); line-height: 1.15; margin-bottom: 1.5rem;
+    }
+
+    .hero-title em {
+      font-style: italic; color: var(--gold);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem; color: rgba(255,255,255,.72); line-height: 1.8;
+      margin-bottom: 2.5rem; max-width: 520px;
+    }
+
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn-red {
+      display: inline-block; background: var(--red); color: var(--white);
+      padding: .9rem 2rem; border-radius: 4px; font-weight: 600; font-size: .95rem;
+      text-decoration: none; transition: background .2s, transform .15s;
+    }
+
+    .btn-red:hover { background: var(--red-light); transform: translateY(-1px); }
+
+    .btn-outline-white {
+      display: inline-block; background: transparent; color: var(--white);
+      padding: .9rem 2rem; border-radius: 4px; font-weight: 500; font-size: .95rem;
+      text-decoration: none; border: 1px solid rgba(255,255,255,.35);
+      transition: all .2s;
+    }
+
+    .btn-outline-white:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* Hero stats */
+    .hero-stats {
+      background: rgba(255,255,255,.05); border: 1px solid rgba(184,150,62,.25);
+      border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px);
+    }
+
+    .hero-stats-title {
+      font-size: .7rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.5rem; padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(184,150,62,.2);
+    }
+
+    .stat-row {
+      display: flex; align-items: center; gap: 1rem; padding: .9rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .stat-row:last-child { border-bottom: none; }
+
+    .stat-icon {
+      width: 40px; height: 40px; background: rgba(184,150,62,.12);
+      border-radius: 8px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; flex-shrink: 0;
+    }
+
+    .stat-label { font-size: .8rem; color: rgba(255,255,255,.5); margin-bottom: .15rem; }
+    .stat-value { font-family: var(--font-display); font-size: 1rem; color: var(--white); font-weight: 700; }
+
+    /* ── SECTIONS ── */
+    section { padding: 5rem 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+
+    .section-eyebrow {
+      font-size: .7rem; font-weight: 700; letter-spacing: .2em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .75rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700; color: var(--navy); line-height: 1.2; margin-bottom: 1rem;
+    }
+
+    .section-title.light { color: var(--white); }
+
+    .section-lead {
+      font-size: 1.05rem; color: var(--gray-text); max-width: 580px;
+      line-height: 1.75; margin-bottom: 3rem;
+    }
+
+    .section-lead.light { color: rgba(255,255,255,.65); }
+
+    /* ── SERVICES ── */
+    #services { background: var(--cream); }
+
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
+    .service-card {
+      background: var(--white); border-radius: 10px; padding: 2rem;
+      border: 1px solid var(--border); border-top: 3px solid var(--gold);
+      transition: box-shadow .2s, transform .2s;
+    }
+
+    .service-card:hover { box-shadow: 0 8px 32px rgba(10,22,40,.1); transform: translateY(-3px); }
+
+    .service-num {
+      font-family: var(--font-display); font-size: 2rem; font-weight: 700;
+      color: rgba(184,150,62,.25); line-height: 1; margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
+      color: var(--navy); margin-bottom: .75rem;
+    }
+
+    .service-card p { font-size: .9rem; color: var(--gray-text); line-height: 1.7; }
+
+    /* ── WHY US ── */
+    #why { background: var(--navy); }
+
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+
+    .why-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .why-item { display: flex; gap: 1rem; align-items: flex-start; }
+
+    .why-check {
+      width: 28px; height: 28px; background: rgba(184,150,62,.15);
+      border: 1px solid var(--gold); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; color: var(--gold); font-size: .75rem; margin-top: 2px;
+    }
+
+    .why-item h4 { color: var(--white); font-weight: 600; margin-bottom: .2rem; }
+    .why-item p { color: rgba(255,255,255,.6); font-size: .875rem; line-height: 1.65; }
+
+    .numbers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .number-card {
+      background: rgba(255,255,255,.05); border: 1px solid rgba(184,150,62,.2);
+      border-radius: 10px; padding: 1.5rem; text-align: center;
+    }
+
+    .number-value {
+      font-family: var(--font-display); font-size: 2.4rem; font-weight: 700;
+      color: var(--gold); line-height: 1;
+    }
+
+    .number-label { font-size: .78rem; color: rgba(255,255,255,.5); margin-top: .4rem; }
+
+    /* ── TERMIN ── */
+    #termin { background: var(--gray-bg); }
+
+    .termin-box {
+      background: var(--white); border-radius: 14px; padding: 3rem;
+      max-width: 620px; margin: 0 auto; text-align: center;
+      border: 1px solid var(--border);
+    }
+
+    .termin-box h3 {
+      font-family: var(--font-display); font-size: 1.6rem; color: var(--navy);
+      margin-bottom: .75rem;
+    }
+
+    .termin-box p { color: var(--gray-text); margin-bottom: 2rem; line-height: 1.7; }
+
+    .btn-navy {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--navy); color: var(--white); padding: 1rem 2.5rem;
+      border-radius: 6px; font-weight: 600; font-size: 1rem; text-decoration: none;
+      transition: background .2s, transform .15s;
+    }
+
+    .btn-navy:hover { background: var(--navy-mid); transform: translateY(-1px); }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--white); }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+
+    .contact-info h3 {
+      font-family: var(--font-display); font-size: 1.4rem; color: var(--navy); margin-bottom: 1rem;
+    }
+
+    .contact-info p { color: var(--gray-text); line-height: 1.75; margin-bottom: 1.5rem; }
+
+    .contact-detail { display: flex; align-items: flex-start; gap: .75rem; margin-bottom: .9rem; font-size: .9rem; color: var(--navy); }
+
+    .contact-icon {
+      width: 36px; height: 36px; background: rgba(184,150,62,.1);
+      border-radius: 6px; display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 1rem; flex-shrink: 0;
+    }
+
+    /* Form */
+    .form-group { margin-bottom: 1.1rem; }
+
+    .form-group label {
+      display: block; font-size: .75rem; font-weight: 600;
+      letter-spacing: .08em; text-transform: uppercase;
+      color: var(--navy); margin-bottom: .4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; padding: .75rem 1rem;
+      border: 1.5px solid var(--border); border-radius: 6px;
+      font-family: var(--font-body); font-size: .9rem; color: var(--navy);
+      background: var(--white); transition: border-color .2s; appearance: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none; border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(184,150,62,.12);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .honeypot { display: none !important; }
+
+    .form-submit {
+      width: 100%; background: var(--navy); color: var(--white);
+      padding: .9rem; border: none; border-radius: 6px;
+      font-family: var(--font-body); font-size: 1rem; font-weight: 600;
+      cursor: pointer; transition: background .2s; margin-top: .5rem;
+    }
+
+    .form-submit:hover { background: var(--navy-mid); }
+    .form-submit:disabled { opacity: .6; cursor: not-allowed; }
+
+    .form-msg {
+      margin-top: .9rem; padding: .75rem 1rem; border-radius: 6px;
+      font-size: .875rem; display: none;
+    }
+
+    .form-msg.success { background: #D1FAE5; color: #065F46; display: block; }
+    .form-msg.error { background: #FEE2E2; color: #991B1B; display: block; }
+
+    /* ── LEGAL ── */
+    #legal { background: var(--cream); padding: 4rem 2rem; }
+
+    .legal-inner { max-width: 800px; margin: 0 auto; }
+    .legal-inner h2 { font-family: var(--font-display); font-size: 1.4rem; color: var(--navy); margin-bottom: 1.25rem; }
+    .legal-inner p, .legal-inner address { font-size: .875rem; color: var(--gray-text); line-height: 1.8; font-style: normal; margin-bottom: .75rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy); color: rgba(255,255,255,.5);
+      padding: 2rem; text-align: center; font-size: .85rem;
+    }
+
+    footer a { color: var(--gold); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; flex-wrap: wrap; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-stats { display: none; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .nav-links li:not(:last-child) { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .numbers-grid { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      section { padding: 3.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Sundance<span> LLC</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">About</a></li>
+      <li><a href="#termin">Consultation</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-flag">Torrance, California · U.S.A.</div>
+        <h1 class="hero-title">
+          Your Gateway to<br>
+          <em>the American Market</em>
+        </h1>
+        <p class="hero-sub">
+          Sundance LLC is a premier U.S. business consulting and corporate advisory firm, 
+          guiding international clients through every stage of their American investment journey — 
+          from company formation to long-term growth strategy.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-red">Start Your Journey</a>
+          <a href="https://telefon-termin.com/beratung/" target="_blank" rel="noopener" class="btn-outline-white">📅 Book Consultation</a>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stats-title">Why Sundance LLC</div>
+        <div class="stat-row">
+          <div class="stat-icon">🏛️</div>
+          <div>
+            <div class="stat-label">Established</div>
+            <div class="stat-value">Since 2007</div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-icon">🌍</div>
+          <div>
+            <div class="stat-label">Clients Served</div>
+            <div class="stat-value">International</div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-icon">⚖️</div>
+          <div>
+            <div class="stat-label">Expertise</div>
+            <div class="stat-value">Legal · Finance · Banking</div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-icon">📍</div>
+          <div>
+            <div class="stat-label">Location</div>
+            <div class="stat-value">Torrance, CA · USA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-inner">
+      <div class="section-eyebrow">Our Expertise</div>
+      <h2 class="section-title">Comprehensive Business Consulting Services</h2>
+      <p class="section-lead">We provide end-to-end corporate advisory services tailored to international clients seeking to establish, invest and grow in the United States.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>Business Consulting</h3>
+          <p>Strategic business consulting for international companies entering the U.S. market. From market analysis and competitive positioning to operational strategy and growth planning.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>Corporate Advisory</h3>
+          <p>Expert corporate advisory across all stages of your U.S. business lifecycle — entity selection, governance structure, compliance, mergers, acquisitions and restructuring.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Company Formation</h3>
+          <p>Seamless LLC, Corporation and other entity formation across all U.S. states. We handle registration, EIN applications, operating agreements and all required filings.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <h3>Financial Advisory</h3>
+          <p>Tailored financial strategies for navigating the American market — investment structuring, capital allocation, tax efficiency and cross-border financial planning.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <h3>Legal Support</h3>
+          <p>Comprehensive legal guidance for international business in the U.S. — contracts, regulatory compliance, intellectual property, employment law and dispute resolution coordination.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">06</div>
+          <h3>Banking Solutions</h3>
+          <p>Expert guidance on U.S. banking relationships — business account opening, merchant processing, wire transfer solutions and navigating U.S. financial regulations for foreign entities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SUNDANCE -->
+  <section id="why">
+    <div class="section-inner">
+      <div class="why-grid">
+        <div>
+          <div class="section-eyebrow" style="color:var(--gold)">Why Sundance LLC</div>
+          <h2 class="section-title light">A proven partner for<br>international success</h2>
+          <p class="section-lead light">We combine deep U.S. market expertise with a genuine commitment to each client's success — delivering solutions that work in the real world.</p>
+          <ul class="why-list">
+            <li class="why-item">
+              <span class="why-check">✓</span>
+              <div>
+                <h4>Client-Centric Approach</h4>
+                <p>Every client receives a bespoke strategy tailored to their specific goals, industry and country of origin — not a one-size-fits-all solution.</p>
+              </div>
+            </li>
+            <li class="why-item">
+              <span class="why-check">✓</span>
+              <div>
+                <h4>Deep U.S. Market Expertise</h4>
+                <p>Our team has navigated the complexities of the American market across dozens of industries and jurisdictions for over 15 years.</p>
+              </div>
+            </li>
+            <li class="why-item">
+              <span class="why-check">✓</span>
+              <div>
+                <h4>Full-Service Coverage</h4>
+                <p>From initial market entry to ongoing corporate governance — we cover every aspect of your U.S. business journey under one roof.</p>
+              </div>
+            </li>
+            <li class="why-item">
+              <span class="why-check">✓</span>
+              <div>
+                <h4>International Network</h4>
+                <p>Connected to a global network of legal, financial and banking professionals to support your cross-border needs wherever they arise.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="numbers-grid">
+          <div class="number-card">
+            <div class="number-value">15+</div>
+            <div class="number-label">Years of U.S. Market Expertise</div>
+          </div>
+          <div class="number-card">
+            <div class="number-value">50+</div>
+            <div class="number-label">Countries Represented</div>
+          </div>
+          <div class="number-card">
+            <div class="number-value">100%</div>
+            <div class="number-label">Client Confidentiality</div>
+          </div>
+          <div class="number-card">
+            <div class="number-value">All 50</div>
+            <div class="number-label">U.S. States Covered</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TERMIN -->
+  <section id="termin">
+    <div class="section-inner">
+      <div style="text-align:center">
+        <div class="section-eyebrow">Free Consultation</div>
+        <h2 class="section-title">Schedule a Phone Consultation</h2>
+        <p class="section-lead" style="margin:0 auto 2rem">Speak directly with one of our U.S. business consultants. Free, confidential and no obligation.</p>
+      </div>
+      <div class="termin-box">
+        <div style="font-size:2.5rem;margin-bottom:1rem">📅</div>
+        <h3>Book Your Consultation</h3>
+        <p>Choose a time that works for you. One of our consultants will call you at the agreed time to discuss your U.S. business goals and how we can help — available Monday to Friday.</p>
+        <a href="https://telefon-termin.com/beratung/" target="_blank" rel="noopener" class="btn-navy">
+          📅 Book Free Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-eyebrow">Contact</div>
+          <h2 class="section-title">Let's Talk About Your Goals</h2>
+          <p>Tell us about your U.S. business objectives and we'll get back to you within 24 hours with a tailored proposal. All enquiries are treated with strict confidentiality.</p>
+          <div class="contact-detail">
+            <span class="contact-icon">📞</span>
+            <div>
+              <div style="font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-text);margin-bottom:.15rem">Phone</div>
+              <a href="tel:+17869752436" style="color:var(--navy)">786.975.2436</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">📍</span>
+            <div>
+              <div style="font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-text);margin-bottom:.15rem">Address</div>
+              <address style="font-style:normal;line-height:1.6">
+                Sundance LLC<br>
+                444 Alaska Avenue, Suite #58056<br>
+                Torrance, CA 90503<br>
+                United States
+              </address>
+            </div>
+          </div>
+          <div style="margin-top:1.5rem">
+            <a href="https://telefon-termin.com/beratung/" target="_blank" rel="noopener" class="btn-red">📅 Book Consultation</a>
+          </div>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" />
+          <input type="hidden" id="formstart" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" required placeholder="John" />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" required placeholder="Smith" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" required placeholder="john@company.com" />
+          </div>
+          <div class="form-group">
+            <label for="country">Country of Origin</label>
+            <input type="text" id="country" placeholder="Germany, UK, UAE…" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service of Interest</label>
+            <select id="service">
+              <option value="">Please select…</option>
+              <option>Business Consulting</option>
+              <option>Corporate Advisory</option>
+              <option>Company Formation (LLC/Corp)</option>
+              <option>Financial Advisory</option>
+              <option>Legal Support</option>
+              <option>Banking Solutions</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" required placeholder="Please describe your goals and how we can assist you…"></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+          <div class="form-msg" id="formMsg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGAL -->
+  <section id="legal">
+    <div class="legal-inner">
+      <h2>Legal Notice / Impressum</h2>
+      <address>
+        <strong>Sundance LLC</strong><br>
+        444 Alaska Avenue, Suite #58056<br>
+        Torrance, CA 90503<br>
+        United States of America
+      </address>
+      <p>
+        <strong>Phone:</strong> <a href="tel:+17869752436" style="color:var(--navy)">786.975.2436</a><br>
+        <strong>Website:</strong> www.sundance-llc.com
+      </p>
+      <p>
+        Sundance LLC is a limited liability company registered in the State of California, USA. 
+        All services are provided for informational and consulting purposes only and do not constitute legal or financial advice.
+      </p>
+      <p>
+        <strong>Disclaimer:</strong> Despite careful content review, we accept no liability for the content of external links. The operators of linked pages are solely responsible for their content.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="#legal">Legal Notice</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.pan21.com" target="_blank" rel="noopener">PAN21 Network</a>
+    </div>
+    <p>© 2026 Sundance LLC · Torrance, California · U.S.A.</p>
+  </footer>
+
+  <script>
+    document.getElementById('formstart').value = Date.now()
+
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault()
+      const btn = document.getElementById('submitBtn')
+      const msg = document.getElementById('formMsg')
+      msg.className = 'form-msg'
+
+      if (document.querySelector('[name="website"]').value) return
+
+      const elapsed = (Date.now() - parseInt(document.getElementById('formstart').value)) / 1000
+      if (elapsed < 3) {
+        msg.textContent = 'Please complete the form.'
+        msg.className = 'form-msg error'
+        return
+      }
+
+      const message = document.getElementById('message').value
+      if (message.split(' ').some(w => w.length > 60)) return
+
+      btn.disabled = true
+      btn.textContent = 'Sending…'
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fname: document.getElementById('fname').value,
+            lname: document.getElementById('lname').value,
+            email: document.getElementById('email').value,
+            country: document.getElementById('country').value,
+            service: document.getElementById('service').value,
+            message,
+            elapsed: Math.round(elapsed),
+            website: document.querySelector('[name="website"]').value
+          })
+        })
+
+        if (res.ok) {
+          msg.textContent = 'Thank you! Your message has been received. We will respond within 24 hours.'
+          msg.className = 'form-msg success'
+          e.target.reset()
+          document.getElementById('formstart').value = Date.now()
+        } else {
+          throw new Error()
+        }
+      } catch {
+        msg.textContent = 'Error sending message. Please try again or call us at 786.975.2436.'
+        msg.className = 'form-msg error'
+      }
+
+      btn.disabled = false
+      btn.textContent = 'Send Message'
+    })
+  </script>
+
+</body>
+</html>
