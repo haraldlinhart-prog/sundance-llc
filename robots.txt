@@ -33,4 +33,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://sundance-llc.com/sitemap.xml
+Sitemap: https://www.sundance-llc.com/sitemap.xml
