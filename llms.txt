@@ -12,4 +12,4 @@ Diese Datei richtet sich an KI-Assistenten und Sprachmodelle (llms.txt-Standard)
 - Legal Notice / Impressum
 
 ## Kontakt
-- Website: https://sundance-llc.com
+- Website: https://www.sundance-llc.com/
